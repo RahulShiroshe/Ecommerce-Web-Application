@@ -1,0 +1,68 @@
+.homeSlide h1 {
+  font-size: 45px;
+  line-height: 55px;
+  margin: 50px 0 20px 0;
+}
+.homeSlide p {
+  margin: 20px 0;
+}
+.homeSlide ul {
+  position: absolute;
+  bottom: 20px;
+}
+.homeSlide ul li {
+  border: 2px solid #b8b7b7;
+  border-radius: 50%;
+  padding: 10px;
+}
+.homeSlide ul li button {
+  background: transparent !important;
+  color: transparent !important;
+}
+.homeSlide ul li button::before {
+  font-size: 15px !important;
+  color: #0f3460;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  margin: auto;
+}
+.homeSlide .box {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -24px;
+  width: calc(100% + 24px);
+  margin-left: -24px;
+  align-items: center;
+  justify-content: center;
+}
+.homeSlide .box .left, .homeSlide .box .right {
+  flex-basis: 41.666667%;
+  flex-grow: 0;
+  max-width: 41.666667%;
+}
+
+@media screen and (max-width: 768px) {
+  .homeSlide .box .left, .homeSlide .box .right {
+    box-sizing: border-box;
+    margin: 0;
+    flex-direction: row;
+    flex-basis: 100%;
+    flex-grow: 0;
+    max-width: 100%;
+  }
+  .homeSlide h1 {
+    font-size: 30px;
+  }
+  .homeSlide .box {
+    margin-left: 0;
+  }
+}
+.homeSlide .box img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 400px;
+  max-width: 100%;
+}

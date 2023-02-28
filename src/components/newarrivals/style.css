@@ -1,0 +1,133 @@
+.heading img {
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+}
+.NewArrivals h4 {
+  font-weight: 400;
+}
+.NewArrivals span {
+  color: #e94560;
+  font-size: 15px;
+  font-weight: 500;
+}
+.heading-right span {
+  color: #7D879C;
+}
+
+.NewArrivals .box a .img {
+  border-radius: 8px;
+  margin-bottom: 8px;
+  overflow: hidden;
+  position: relative;
+  min-height: 180px;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.NewArrivals .box a .img:after {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  bottom: 0;
+  content: " ";
+  position: absolute;
+  transition: all 250ms ease-in-out;
+}
+
+.NewArrivals .box a .img:hover:after {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.css-1bg {
+  background-color: #fff;
+  color: #2B3445;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow: 0 1px 3px rgba(3, 0, 71, 0.09);
+  overflow: hidden;
+  border-radius: 8px;
+  overflow: unset;
+  transition: all 250ms ease-in-out;
+  padding: 16px;
+}
+.p-l-t {
+  padding-left: 24px;
+  padding-top: 24px;
+}
+.css-1a {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-top: -24px;
+  width: calc(100% + 24px);
+  margin-left: -24px;
+}
+.css-1a .box {
+  box-sizing: border-box;
+  margin: 0;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  flex-basis: 50%;
+  flex-grow: 0;
+  max-width: 50%;
+}
+
+.css-1a a {
+  border-radius: 8px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+.css-1a a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  margin: auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 600px) {
+  .css-1a .box {
+    flex-basis: 33.333333%;
+    flex-grow: 0;
+    max-width: 33.333333%;
+  }
+}
+@media (min-width: 960px) {
+  .css-1a .box {
+    flex-basis: 25%;
+    flex-grow: 0;
+    max-width: 25%;
+  }
+}
+@media (min-width: 1280px) {
+  .css-1a .box {
+    flex-basis: 16.666667%;
+    flex-grow: 0;
+    max-width: 16.666667%;
+  }
+}
+@media (min-width: 1920px) {
+  .css-1a .box {
+    flex-basis: 16.666667%;
+    flex-grow: 0;
+    max-width: 16.666667%;
+  }
+}
+
+
